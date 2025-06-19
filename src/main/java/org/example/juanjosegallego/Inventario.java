@@ -1,5 +1,6 @@
 package org.example.juanjosegallego;
 
+import java.lang.reflect.Executable;
 import java.util.Scanner;
 
 public class Inventario {
@@ -41,7 +42,9 @@ public class Inventario {
 
                 } else if (menuOption == 5) {
 
-                }
+                }else throw new Exception();
+
+                menuOption = keyEntry.nextInt();
 
         }
         }catch (Exception error){
