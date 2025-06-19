@@ -7,8 +7,9 @@ public class Inventario {
 
         //ENTRADAS
         Scanner keyEntry = new Scanner(System.in);
-        Integer menuOption=null;
+        Integer menuOption=0;
         String colorVerde="\u001B[32m";
+        String reset="\u001B[0m";
 
 
         //PROCESO 1 (Crear el menu de opciones)
@@ -24,10 +25,30 @@ public class Inventario {
         System.out.println("4️⃣  Eliminar una prenda del sistema 🗑️");
         System.out.println("5️⃣  Presiona 5 para SALIR ❌");
 
-        while(menuOption!=5){
-            System.out.println("oe");
-        }
+        System.out.println(reset+"\nopcion:");
 
+        try {
+            menuOption = keyEntry.nextInt();
+            while(menuOption!=5){
+
+                if(menuOption == 1){
+
+                } else if (menuOption == 2) {
+
+                } else if (menuOption == 3) {
+
+                } else if (menuOption == 4) {
+
+                } else if (menuOption == 5) {
+
+                }
+
+        }
+        }catch (Exception error){
+
+            System.out.println("revisa!, lo escrito no es una opcion");
+
+        }
         //PROCESO 2
 
         //PROCESO 3
