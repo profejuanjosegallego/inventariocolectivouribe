@@ -1,6 +1,7 @@
 package org.example.juanjosegallego;
 
 import java.nio.channels.ScatteringByteChannel;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Inventario {
@@ -30,7 +31,7 @@ public class Inventario {
         while(menuOption!=5){
             try {
                 if(menuOption==1){
-
+                    ArrayList  <String> productos = new ArrayList();;
                 }else if(menuOption==2){
 
                 }else if(menuOption==3){
