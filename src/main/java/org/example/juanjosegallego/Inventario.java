@@ -1,5 +1,6 @@
 package org.example.juanjosegallego;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Inventario {
@@ -16,9 +17,9 @@ public class Inventario {
         System.out.println("***** Uribe APP *****");
         System.out.println("******************");
 
-        System.out.println("\n👕 Bienvenido a gestor de prendas...\n");
+        System.out.println(colorVerde+"\n👕 Bienvenido a gestor de prendas...\n");
         System.out.println("¿Qué quieres realizar?");
-        System.out.println(colorVerde+"1️⃣  Guardar una prenda en BD 📝");
+        System.out.println("1️⃣  Guardar una prenda en BD 📝");
         System.out.println("2️⃣  Mostrar el inventario de prendas 📦");
         System.out.println("3️⃣  Modificar los datos de una prenda ✏️");
         System.out.println("4️⃣  Eliminar una prenda del sistema 🗑️");
@@ -29,7 +30,8 @@ public class Inventario {
                 try {
                     //Evaluar las condiciones del menu
                     if(menuOption==1){
-
+                        //Registro de productos
+                        ArrayList<Integer> productos = new ArrayList<>();
                     } else if (menuOption==2) {
 
                     } else if (menuOption==3) {
