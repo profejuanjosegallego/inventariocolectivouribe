@@ -23,9 +23,29 @@ public class Inventario {
         System.out.println("3️⃣  Modificar los datos de una prenda ✏️");
         System.out.println("4️⃣  Eliminar una prenda del sistema 🗑️");
         System.out.println("5️⃣  Presiona 5 para SALIR ❌");
-
+        System.out.println("\nApreciado usuario, digite una opcion");
+        menuOption = keyEntry.nextInt();
         while(menuOption!=5){
-            System.out.println("oe");
+                try {
+                    //Evaluar las condiciones del menu
+                    if(menuOption==1){
+
+                    } else if (menuOption==2) {
+
+                    } else if (menuOption==3) {
+
+                    } else if (menuOption==4) {
+
+                    } else if (menuOption==5) {
+
+                    }
+
+                }catch (Exception error){
+                    //Captar el error de el proceso del ciclo
+                    System.out.println("Upps, cuidado la cagaste");
+                }
+
+            }
         }
 
         //PROCESO 2
@@ -35,4 +55,4 @@ public class Inventario {
         //SALIDAS
 
     }
-}
+
