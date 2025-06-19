@@ -1,4 +1,4 @@
-package org.example.juanjosegallego;
+package org.example.AlexisRodriguezBetancur;
 
 import java.util.Scanner;
 
@@ -9,7 +9,6 @@ public class Inventario {
         Scanner keyEntry = new Scanner(System.in);
         Integer menuOption=null;
         String colorVerde="\u001B[32m";
-
 
         //PROCESO 1 (Crear el menu de opciones)
         System.out.println("\n******************");
@@ -24,8 +23,27 @@ public class Inventario {
         System.out.println("4️⃣  Eliminar una prenda del sistema 🗑️");
         System.out.println("5️⃣  Presiona 5 para SALIR ❌");
 
+        System.out.println("\nApreciado usuario, digita una opcion: ");
+        menuOption = keyEntry.nextInt();
         while(menuOption!=5){
-            System.out.println("oe");
+            try {
+                //Evaluar las codicionales del menu
+                if (menuOption == 2){
+
+                } else if (menuOption==3) {
+
+                } else if (menuOption==3) {
+
+                } else if (menuOption==4) {
+
+                } else if (menuOption==5) {
+
+                }
+
+            } catch (Exception Error) {
+                System.out.println("Uppssi, Cuidado viej@ te has equivocado  JAKJDKASJD mer@ tontis");
+            }
+
         }
 
         //PROCESO 2
@@ -34,5 +52,7 @@ public class Inventario {
 
         //SALIDAS
 
+        //asdad
     }
 }
+
