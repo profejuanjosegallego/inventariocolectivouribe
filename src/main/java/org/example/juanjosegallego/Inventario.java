@@ -1,5 +1,7 @@
 package org.example.juanjosegallego;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Inventario {
@@ -9,6 +11,8 @@ public class Inventario {
         Scanner keyEntry = new Scanner(System.in);
         Integer menuOption=null;
         String colorVerde="\u001B[32m";
+
+        ArrayList<Object> productos=new ArrayList<>();
 
 
         //PROCESO 1 (Crear el menu de opciones)
@@ -27,34 +31,54 @@ public class Inventario {
         System.out.println("Digita una opcion: ");
         menuOption=keyEntry.nextInt();
 
-        while(menuOption!=5){
+
+
+        while(true){HashMap<String,Object> diccionario=new HashMap<>();
 
            try{
 
-               if() {
+               if(menuOption==1) {
+                   System.out.println("registrando un producto...");
+                /* keyEntry.nextLine();
+                   productos.add(keyEntry.nextLine());
+                   System.out.println(productos);*/
 
+
+                   System.out.println("DIGITA EL ID: ");
+                   diccionario.put("ID",keyEntry.nextInt());
+
+                   System.out.println("DIGITA EL PRECIO: ");
+                   diccionario.put("PRECIO",keyEntry.nextInt());
+
+                   System.out.println("DIGITA EN NOMBRE DEL PRODUCTO");
+                   keyEntry.nextLine();
+                   diccionario.put("NOMBRE",keyEntry.nextLine());
+                   System.out.println(diccionario);
+
+                   productos.add(diccionario);
+                   }
+
+
+               else if(menuOption==2){
+                   System.out.println("mostrando el inventario...");
+                   System.out.println(productos);
                }
-               else if(){
-
+               else if(menuOption==3){
+                   System.out.println("modificando un producto...");
                }
-               else if(){
-
+               else if(menuOption==4){
+                   System.out.println("eliminando el producto de el inventario...");
                }
-               else if(){
-
+               else if(menuOption==5){
+                   System.out.println("gracias por usar nuestra app");
                }
-               else if(){
-
-               }
-
+               System.out.println("ahora digite otra opcion: ");
+               menuOption=keyEntry.nextInt();
 
            }catch(Exception error){
-
+               System.out.println(error.getMessage());
            }
-
-
         }
-
         //PROCESO 2
 
         //PROCESO 3
